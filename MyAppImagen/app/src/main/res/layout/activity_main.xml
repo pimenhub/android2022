@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgvTruck"
+        android:layout_width="400sp"
+        android:layout_height="400sp"
+        android:layout_margin="15sp"
+        android:src="@drawable/ic_truck" />
+
+    <Button
+        android:id="@+id/btnTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgvTruck"
+        android:layout_margin="10sp"
+        android:text="¿Qué tipo de vehículo es?" />
+
+    <Button
+        android:id="@+id/btnTamanio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTipo"
+        android:layout_margin="10sp"
+        android:text="¿De qué tamaño es el vehículo?" />
+    <Button
+        android:id="@+id/btnHola"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTamanio"
+        android:layout_margin="10sp"
+        android:text="HOLA"
+        android:onClick="onClick"/>
+
+
+
+</RelativeLayout>
