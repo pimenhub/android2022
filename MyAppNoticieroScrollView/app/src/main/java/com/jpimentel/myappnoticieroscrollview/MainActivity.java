@@ -1,4 +1,4 @@
-package com.jpimentel.myappmultiplesactivitys;
+package com.jpimentel.myappnoticieroscrollview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,28 +13,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = findViewById(R.id.btnSiguienteR);
-
+        button = findViewById(R.id.btnInfo);
         this.click();
     }
 
     private void click() {
-        int a = 2;
-        Intent intent = new Intent(this, MainActivity3.class);
-        Intent intent2 = new Intent(this, MainActivity2.class);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(a == 2){
-                    startActivity(intent);
-                }
-                else if(a == 1){
-                    startActivity(intent2);
-                }
-
-                //finish();
+                accionActivity();
             }
         });
-
     }
+    private void accionActivity(){
+        Intent intent = new Intent(this, MANoticiero.class);
+        startActivity(intent);
+    }
+
 }
