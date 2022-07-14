@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyAppRepaso1</string>
+
+    <string name="textoSuma">
+        Se piensa que el ser humano del neolítico ya manejaba los principios matemáticos elementales, entre los que necesariamente estarían la adición y la resta, dado que estas operaciones son fáciles de evidenciar de cara a las provisiones agrícolas que aumentaban y disminuían conforme a la época del año.
+        \n\nLa suma o adición es una operación matemática fundamental, que consiste en la incorporación de nuevos elementos a un conjunto numérico, esto es, a la fusión de dos números para obtener uno nuevo, que exprese el valor total de los dos anteriores. La suma es el principio fundamental con el que aprendemos a vincularnos con los números, ya que el mero hecho de contar de a uno en uno (1, 2, 3, 4…) supone sumar 1 (1+0, 1+1, 1+2, 1+3…).
+    </string>
+</resources>
