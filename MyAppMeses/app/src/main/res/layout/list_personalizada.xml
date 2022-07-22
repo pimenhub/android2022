@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgLista"
+        android:layout_width="55sp"
+        android:layout_height="55sp"
+        android:layout_margin="25sp"
+        android:src="@drawable/ic_calendario_list" />
+
+    <LinearLayout
+        android:id="@+id/llContenedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/imgLista"
+        android:layout_margin="10sp">
+
+        <TextView
+            android:id="@+id/txtNumeroMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#3F51B5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtNombreMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enero"
+            android:textColor="#3F51B5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAnio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022"
+            android:textColor="#3F51B5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="#3F51B5"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25sp"
+        />
+
+</RelativeLayout>
