@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgUserDetalle"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/ic_user"
+        android:layout_margin="25sp"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:id="@+id/txtNombreDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        />
+    <TextView
+        android:id="@+id/txtApellidoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        />
+    <TextView
+        android:id="@+id/txtEdadDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edad"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        />
+    <Button
+        android:id="@+id/btnEstadoDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Estado"
+        android:layout_margin="5sp"
+        />
+
+
+</LinearLayout>
