@@ -2,6 +2,7 @@ package com.jpimentel.myappgridview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,19 +20,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         gridView = findViewById(R.id.gridAnimalesDomes);
 
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, this.animales());
-        gridView.setAdapter(arrayAdapter);
+        //ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, this.nombres());
+        //gridView.setAdapter(arrayAdapter);
+        AdapterGrid adapterGrid = new AdapterGrid(this, R.layout.grid_personalizado, this.imagenes(), this.nombres());
+        gridView.setAdapter(adapterGrid);
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, "A pulsado "+animales().get(i), Toast.LENGTH_SHORT).show();
+                    traslado(i);
             }
         });
 
     }
 
-    private ArrayList<String> animales(){
+    private ArrayList<String> nombres(){
         ArrayList<String> animales = new ArrayList<>();
         animales.add("Perro");
         animales.add("Gato");
@@ -39,27 +42,22 @@ public class MainActivity extends AppCompatActivity {
         animales.add("Loro");
         animales.add("Tortuga");
         animales.add("Perico");
-
-        animales.add("Perro");
-        animales.add("Gato");
-        animales.add("Hamster");
-        animales.add("Loro");
-        animales.add("Tortuga");
-        animales.add("Perico");
-
-        animales.add("Perro");
-        animales.add("Gato");
-        animales.add("Hamster");
-        animales.add("Loro");
-        animales.add("Tortuga");
-        animales.add("Perico");
-
-        animales.add("Perro");
-        animales.add("Gato");
-        animales.add("Hamster");
-        animales.add("Loro");
-        animales.add("Tortuga");
-        animales.add("Perico");
         return animales;
+    }
+    private ArrayList<Integer> imagenes(){
+        ArrayList<Integer> imagenes = new ArrayList<>();
+        imagenes.add(R.drawable.ic_perro);
+        imagenes.add(R.drawable.ic_gato);
+        imagenes.add(R.drawable.ic_hamster);
+        imagenes.add(R.drawable.ic_loro);
+        imagenes.add(R.drawable.ic_tortuga);
+        imagenes.add(R.drawable.ic_perico);
+        return imagenes;
+    }
+
+    private void traslado(int posicion){
+        Intent intent = new Intent(this, MAImagen.class);
+        intent.putExtra("imagen", this.imagenes().get(posicion));
+        startActivity(intent);
     }
 }

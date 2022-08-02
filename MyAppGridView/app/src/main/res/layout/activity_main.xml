@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="15sp"
         android:numColumns="auto_fit"
-        android:columnWidth="90sp"
+        android:columnWidth="120sp"
         android:horizontalSpacing="10sp"
         android:verticalSpacing="10sp"
         android:stretchMode="columnWidth"
