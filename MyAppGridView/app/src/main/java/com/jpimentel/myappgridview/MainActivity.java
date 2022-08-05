@@ -36,17 +36,17 @@ public class MainActivity extends AppCompatActivity {
 
     private ArrayList<String> nombres(){
         ArrayList<String> animales = new ArrayList<>();
-        animales.add("Perro");
-        animales.add("Gato");
-        animales.add("Hamster");
-        animales.add("Loro");
-        animales.add("Tortuga");
-        animales.add("Perico");
+        animales.add("#Rojo");
+        animales.add("#Gato");
+        animales.add("#Hamster");
+        animales.add("#Loro");
+        animales.add("#Tortuga");
+        animales.add("#Perico");
         return animales;
     }
     private ArrayList<Integer> imagenes(){
         ArrayList<Integer> imagenes = new ArrayList<>();
-        imagenes.add(R.drawable.ic_perro);
+        imagenes.add(R.color.rojo_fuerte);
         imagenes.add(R.drawable.ic_gato);
         imagenes.add(R.drawable.ic_hamster);
         imagenes.add(R.drawable.ic_loro);
