@@ -1,6 +1,8 @@
 package com.jpimentel.myapplistapersonalizada;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -71,7 +73,8 @@ public class AdapterPersonalizadoSecundario extends BaseAdapter {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "El estado de "+nomDetalleDato+" es "+estado(edadDetalleDato), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(context, "El estado de "+nomDetalleDato+" es "+estado(edadDetalleDato), Toast.LENGTH_SHORT).show();
+                trasladoAdapter(imgDetalleDato,nomDetalleDato,apeDetalleDato,edadDetalleDato,estado(edadDetalleDato));
             }
         });
 
@@ -88,5 +91,17 @@ public class AdapterPersonalizadoSecundario extends BaseAdapter {
             estado = "Inactivo";
         }
         return estado;
+    }
+
+    private void trasladoAdapter(int img, String nombre, String apellido, int edad, String estado){
+        Intent intent = new Intent(context, MADatosAdicionales.class);
+        intent.putExtra("img", img);
+        intent.putExtra("nombre", nombre);
+        intent.putExtra("apellido", apellido);
+        intent.putExtra("edad", edad);
+        intent.putExtra("estado", estado);
+        context.startActivity(intent);
+        ((Activity)context).finish();//Se realiza un tipo de contexto para acceder al metodo finish o eventos de ciclo
+
     }
 }

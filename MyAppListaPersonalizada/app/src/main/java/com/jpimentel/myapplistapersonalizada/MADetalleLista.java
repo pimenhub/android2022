@@ -49,9 +49,9 @@ public class MADetalleLista extends AppCompatActivity {
 
     private ArrayList<Integer> imagesPedro() {
         ArrayList<Integer> images = new ArrayList<>();
-        images.add(R.drawable.ic_launcher_foreground);
-        images.add(R.drawable.ic_launcher_foreground);
-        images.add(R.drawable.ic_launcher_foreground);
+        images.add(R.mipmap.ic_launcher);
+        images.add(R.mipmap.ic_launcher);
+        images.add(R.mipmap.ic_launcher);
         return images;
     }
 

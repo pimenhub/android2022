@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<Integer> images(){
         ArrayList<Integer> images = new ArrayList<>();
         images.add(R.drawable.ic_user);
-        images.add(R.drawable.ic_launcher_foreground);
+        images.add(R.mipmap.ic_launcher);
         images.add(R.drawable.ic_user);
-        images.add(R.drawable.ic_launcher_foreground);
+        images.add(R.mipmap.ic_launcher);
         return images;
     }
     private ArrayList<String> nombres(){
@@ -51,5 +51,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(getApplicationContext(),MADetalleLista.class);
         intent.putExtra("nombre", nombres().get(position));
         startActivity(intent);
+        finish();
     }
 }
