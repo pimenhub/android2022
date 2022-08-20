@@ -7,6 +7,17 @@
     android:background="#E53935">
 
     <!-- TODO: Update blank fragment layout -->
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/texto1"
+                android:textColor="@color/black"
+                />
+    </ScrollView>
 
 </FrameLayout>

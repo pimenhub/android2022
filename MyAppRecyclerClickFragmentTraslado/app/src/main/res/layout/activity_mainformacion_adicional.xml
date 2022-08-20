@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MAInformacionAdicional"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informacion Adicional"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#3949AB"
+        />
+
+    <TextView
+        android:id="@+id/txtNombreInfoAdicional"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del dispositivo"
+        android:layout_margin="15sp"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+    <ImageView
+        android:id="@+id/imgInfoAdicional"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="15sp"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tlId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF7043"
+        app:tabTextColor="@color/white"
+        />
+    <FrameLayout
+        android:id="@+id/flContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

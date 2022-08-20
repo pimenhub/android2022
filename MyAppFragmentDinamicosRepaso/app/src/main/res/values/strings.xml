@@ -2,4 +2,16 @@
     <string name="app_name">MyAppFragmentDinamicosRepaso</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="texto1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tempus lacus vel viverra maximus. Curabitur sed elementum velit, eget rutrum elit. Cras in fermentum nisl. Integer nec sapien molestie, commodo magna eget, aliquet tellus. Nunc porta erat quam, sit amet luctus neque vehicula et. Morbi vitae enim at mi maximus vulputate sed ac erat. Duis ullamcorper, dui in consequat efficitur, eros lectus porttitor sapien, nec faucibus velit neque eget ligula. In viverra tellus eu auctor ultrices. Donec suscipit efficitur viverra. Morbi nisl purus, cursus ac felis vel, tristique ultrices enim.
+
+Praesent sodales id erat et hendrerit. Etiam semper ex vitae est placerat ornare. Curabitur aliquam, mi quis porta tempor, turpis sapien interdum felis, quis gravida magna mauris eget purus. Cras dapibus in mauris quis lobortis. Donec blandit massa eu cursus tincidunt. Suspendisse potenti. Praesent semper dolor tristique nunc aliquet commodo. Nam aliquam tincidunt lacus, sit amet aliquam augue iaculis eu.
+
+Ut vel magna ac odio scelerisque tempor. Nulla sollicitudin dui viverra diam suscipit euismod. Nam sed semper justo, quis scelerisque arcu. Praesent posuere mi sit amet est vulputate vehicula. Mauris id dolor massa. Nullam porta mi quis nisl tincidunt gravida. Aenean sed est non purus venenatis maximus ut sed erat. Sed sodales ex sed lobortis lobortis. Nullam sed porttitor mauris, sed suscipit nibh. Nullam ligula diam, congue volutpat sagittis sit amet, malesuada volutpat erat. Aliquam turpis ligula, rhoncus vel turpis id, malesuada viverra arcu. Ut sed porta nibh. Suspendisse tortor eros, imperdiet non consequat sit amet, tincidunt at purus. Aenean elit nisi, volutpat ut lacinia et, hendrerit ut velit. Integer porttitor et diam a sollicitudin.
+
+Ut non tortor justo. Etiam malesuada tempor quam vitae auctor. Ut elit eros, elementum ac vulputate in, tincidunt ac turpis. In eu feugiat odio. Quisque auctor maximus quam id sollicitudin. Phasellus ex ex, rutrum sed sem vel, faucibus euismod quam. Quisque laoreet diam eu purus gravida, eu lobortis purus sollicitudin. Maecenas bibendum odio sit amet nibh vehicula eleifend vitae et tortor. Integer aliquet, diam imperdiet iaculis gravida, ligula ipsum porttitor nulla, nec sollicitudin ipsum ex eget sapien. Nulla facilisi. Pellentesque at convallis tellus. Maecenas rhoncus tristique mauris, vel rhoncus purus cursus et.
+
+Donec eu arcu quis purus ultrices tincidunt. In hac habitasse platea dictumst. Aliquam posuere egestas felis, non convallis purus ultrices quis. Cras interdum blandit sapien, sit amet fringilla velit luctus sit amet. In dictum vulputate iaculis. Aenean vestibulum urna ut malesuada ultrices. Donec hendrerit consectetur purus, semper rutrum nibh mattis at. Curabitur in rhoncus massa, sed eleifend nibh. Cras consequat, urna non fermentum auctor, mi tortor dapibus libero, in ultricies enim enim in mi. Nunc felis ligula, dictum at odio ac, tempus lacinia metus. Aenean hendrerit rutrum nisi id lobortis.
+    </string>
+
 </resources>

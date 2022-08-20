@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Fragmento 1"));
         tabLayout.addTab(tabLayout.newTab().setText("Fragmento 2"));
         tabLayout.addTab(tabLayout.newTab().setText("Fragmento 3"));
+        tabLayout.selectTab(tabLayout.getTabAt(0));//permite definir en que tab iniciar
 
         fragment1 = new FragmentUno();
         fragment2 = new FragmentDos();

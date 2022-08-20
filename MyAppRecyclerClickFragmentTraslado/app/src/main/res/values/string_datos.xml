@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dispositivo 1 -->
+    <string name="nombreD1">
+        Smartphone
+    </string>
+
+    <string name="precioD1">
+        Q.5,000.00
+    </string>
+
+    <string name="detalleD1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus erat quis ante dictum efficitur. Nullam non sem et quam porta aliquet eget et nisl. Sed hendrerit sagittis orci, elementum consequat nisi malesuada in. Nullam pretium consectetur lorem, blandit mattis justo sodales eu. Praesent iaculis purus at justo tincidunt vehicula. Morbi tincidunt convallis pretium. Phasellus gravida, dolor quis facilisis sollicitudin, lorem magna tincidunt sapien, sit amet ullamcorper nisl magna ut metus. Maecenas elementum tortor sed neque pellentesque, quis fermentum elit tristique. Quisque vulputate leo vel tortor commodo rutrum. Mauris tempor vestibulum rutrum. Nam laoreet lorem a ligula elementum laoreet.
+    </string>
+
+    <string name="especificacionesD1">
+        1.	Lorem ipsum dolor sit amet.\n
+        2.	Consectetur adipiscing elit.\n
+        3.	Aliquam maximus erat quis ante dictum efficitur.\n
+        4.	Nullam non sem et quam porta aliquet eget et nisl.\n
+        5.	Sed hendrerit sagittis orci.\n
+        6.	Elementum consequat nisi malesuada in.\n
+        7.	Nullam pretium consectetur lorem.\n
+        8.	Blandit mattis justo sodales eu.\n
+        9.	Praesent iaculis purus at justo tincidunt vehicula.\n
+        10.	Morbi tincidunt convallis pretium.\n
+        11.	Phasellus gravida, dolor quis facilisis sollicitudin.\n
+        12.	Lorem magna tincidunt sapien, sit amet ullamcorper nisl magna ut metus.\n
+        13.	Maecenas elementum tortor sed neque pellentesque, quis fermentum elit tristique.\n
+        14.	Quisque vulputate leo vel tortor commodo rutrum.\n
+        15.	Mauris tempor vestibulum rutrum.\n
+        16.	Nam laoreet lorem a ligula elementum laoreet.\n
+    </string>
+
+    <!-- Dispositivo 2 -->
+    <string name="nombreD2">
+        Laptop
+    </string>
+
+    <string name="precioD2">
+        Q.8,000.00
+    </string>
+
+    <string name="detalleD2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus erat quis ante dictum efficitur. Nullam non sem et quam porta aliquet eget et nisl. Sed hendrerit sagittis orci, elementum consequat nisi malesuada in. Nullam pretium consectetur lorem, blandit mattis justo sodales eu. Praesent iaculis purus at justo tincidunt vehicula. Morbi tincidunt convallis pretium. Phasellus gravida, dolor quis facilisis sollicitudin, lorem magna tincidunt sapien, sit amet ullamcorper nisl magna ut metus. Maecenas elementum tortor sed neque pellentesque, quis fermentum elit tristique. Quisque vulputate leo vel tortor commodo rutrum. Mauris tempor vestibulum rutrum. Nam laoreet lorem a ligula elementum laoreet.
+    </string>
+
+    <string name="especificacionesD2">
+        1.	Lorem ipsum dolor sit amet.\n
+        2.	Consectetur adipiscing elit.\n
+        3.	Aliquam maximus erat quis ante dictum efficitur.\n
+        4.	Nullam non sem et quam porta aliquet eget et nisl.\n
+        5.	Sed hendrerit sagittis orci.\n
+        6.	Elementum consequat nisi malesuada in.\n
+        7.	Nullam pretium consectetur lorem.\n
+        8.	Blandit mattis justo sodales eu.\n
+        9.	Praesent iaculis purus at justo tincidunt vehicula.\n
+        10.	Morbi tincidunt convallis pretium.\n
+        11.	Phasellus gravida, dolor quis facilisis sollicitudin.\n
+        12.	Lorem magna tincidunt sapien, sit amet ullamcorper nisl magna ut metus.\n
+        13.	Maecenas elementum tortor sed neque pellentesque, quis fermentum elit tristique.\n
+        14.	Quisque vulputate leo vel tortor commodo rutrum.\n
+        15.	Mauris tempor vestibulum rutrum.\n
+        16.	Nam laoreet lorem a ligula elementum laoreet.\n
+    </string>
+
+    <!-- Dispositivo 3 -->
+    <string name="nombreD3">
+        Auriculares
+    </string>
+
+    <string name="precioD3">
+        Q.1,500.00
+    </string>
+
+    <string name="detalleD3">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus erat quis ante dictum efficitur. Nullam non sem et quam porta aliquet eget et nisl. Sed hendrerit sagittis orci, elementum consequat nisi malesuada in. Nullam pretium consectetur lorem, blandit mattis justo sodales eu. Praesent iaculis purus at justo tincidunt vehicula. Morbi tincidunt convallis pretium. Phasellus gravida, dolor quis facilisis sollicitudin, lorem magna tincidunt sapien, sit amet ullamcorper nisl magna ut metus. Maecenas elementum tortor sed neque pellentesque, quis fermentum elit tristique. Quisque vulputate leo vel tortor commodo rutrum. Mauris tempor vestibulum rutrum. Nam laoreet lorem a ligula elementum laoreet.
+    </string>
+
+    <string name="especificacionesD3">
+        1.	Lorem ipsum dolor sit amet.\n
+        2.	Consectetur adipiscing elit.\n
+        3.	Aliquam maximus erat quis ante dictum efficitur.\n
+        4.	Nullam non sem et quam porta aliquet eget et nisl.\n
+        5.	Sed hendrerit sagittis orci.\n
+        6.	Elementum consequat nisi malesuada in.\n
+        7.	Nullam pretium consectetur lorem.\n
+        8.	Blandit mattis justo sodales eu.\n
+        9.	Praesent iaculis purus at justo tincidunt vehicula.\n
+        10.	Morbi tincidunt convallis pretium.\n
+        11.	Phasellus gravida, dolor quis facilisis sollicitudin.\n
+        12.	Lorem magna tincidunt sapien, sit amet ullamcorper nisl magna ut metus.\n
+        13.	Maecenas elementum tortor sed neque pellentesque, quis fermentum elit tristique.\n
+        14.	Quisque vulputate leo vel tortor commodo rutrum.\n
+        15.	Mauris tempor vestibulum rutrum.\n
+        16.	Nam laoreet lorem a ligula elementum laoreet.\n
+    </string>
+
+    <!-- Dispositivo 4 -->
+    <string name="nombreD4">
+        Smart TV
+    </string>
+
+    <string name="precioD4">
+        Q.7,500.00
+    </string>
+
+    <string name="detalleD4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus erat quis ante dictum efficitur. Nullam non sem et quam porta aliquet eget et nisl. Sed hendrerit sagittis orci, elementum consequat nisi malesuada in. Nullam pretium consectetur lorem, blandit mattis justo sodales eu. Praesent iaculis purus at justo tincidunt vehicula. Morbi tincidunt convallis pretium. Phasellus gravida, dolor quis facilisis sollicitudin, lorem magna tincidunt sapien, sit amet ullamcorper nisl magna ut metus. Maecenas elementum tortor sed neque pellentesque, quis fermentum elit tristique. Quisque vulputate leo vel tortor commodo rutrum. Mauris tempor vestibulum rutrum. Nam laoreet lorem a ligula elementum laoreet.
+    </string>
+
+    <string name="especificacionesD4">
+        1.	Lorem ipsum dolor sit amet.\n
+        2.	Consectetur adipiscing elit.\n
+        3.	Aliquam maximus erat quis ante dictum efficitur.\n
+        4.	Nullam non sem et quam porta aliquet eget et nisl.\n
+        5.	Sed hendrerit sagittis orci.\n
+        6.	Elementum consequat nisi malesuada in.\n
+        7.	Nullam pretium consectetur lorem.\n
+        8.	Blandit mattis justo sodales eu.\n
+        9.	Praesent iaculis purus at justo tincidunt vehicula.\n
+        10.	Morbi tincidunt convallis pretium.\n
+        11.	Phasellus gravida, dolor quis facilisis sollicitudin.\n
+        12.	Lorem magna tincidunt sapien, sit amet ullamcorper nisl magna ut metus.\n
+        13.	Maecenas elementum tortor sed neque pellentesque, quis fermentum elit tristique.\n
+        14.	Quisque vulputate leo vel tortor commodo rutrum.\n
+        15.	Mauris tempor vestibulum rutrum.\n
+        16.	Nam laoreet lorem a ligula elementum laoreet.\n
+    </string>
+</resources>
