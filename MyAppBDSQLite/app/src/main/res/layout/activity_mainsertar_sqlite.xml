@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MAInsertarSQLite"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Bebidas"
+        android:textSize="35sp"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        />
+    <EditText
+        android:id="@+id/edtNombreBebidaInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese nombre de la bebida"
+        android:layout_margin="15sp"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/edtSaborBebidaInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el sabor de la bebida"
+        android:layout_margin="15sp"
+        android:inputType="text"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/edtPresentacionBebidaInsertar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese la presentacion de la bebida"
+            android:layout_margin="15sp"
+            android:inputType="number"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mL"
+            android:textSize="20sp"
+            android:layout_margin="15sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edtTipoBebidaInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el tipo de la bebida"
+        android:layout_margin="15sp"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/edtPrecioBebidaInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el precio de la bebida"
+        android:layout_margin="15sp"
+        android:inputType="numberDecimal"
+        />
+    <Button
+        android:id="@+id/btnInsertarRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Bebida"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="15sp"
+        android:backgroundTint="#FF0000"
+        />
+
+
+</LinearLayout>
