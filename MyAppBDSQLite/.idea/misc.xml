@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Jonathan Pimentel/Documents/AndroidProjects2022/MyAppBDSQLite/app/src/main/res/layout/activity_mabuscar_id_sqlite.xml" value="0.33" />
+        <entry key="..\:/Users/Jonathan Pimentel/Documents/AndroidProjects2022/MyAppBDSQLite/app/src/main/res/layout/activity_madetalle.xml" value="0.371875" />
         <entry key="..\:/Users/Jonathan Pimentel/Documents/AndroidProjects2022/MyAppBDSQLite/app/src/main/res/layout/activity_main.xml" value="0.371875" />
         <entry key="..\:/Users/Jonathan Pimentel/Documents/AndroidProjects2022/MyAppBDSQLite/app/src/main/res/layout/activity_mainsertar_sqlite.xml" value="0.371875" />
         <entry key="..\:/Users/Jonathan Pimentel/Documents/AndroidProjects2022/MyAppBDSQLite/app/src/main/res/layout/activity_malistar_mostrar_sqlite.xml" value="0.371875" />
+        <entry key="..\:/Users/Jonathan Pimentel/Documents/AndroidProjects2022/MyAppBDSQLite/app/src/main/res/layout/fragment_detalle.xml" value="0.371875" />
       </map>
     </option>
   </component>

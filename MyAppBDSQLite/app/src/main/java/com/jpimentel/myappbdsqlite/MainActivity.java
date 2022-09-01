@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button buttonInsertar, buttonBuscar, buttonListar;
+    private Button buttonInsertar, buttonBuscar, buttonListar, buttonActualizar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         buttonInsertar = findViewById(R.id.btnInsertarMenu);
         buttonBuscar = findViewById(R.id.btnBuscarMenu);
         buttonListar = findViewById(R.id.btnListarMenu);
+        buttonActualizar = findViewById(R.id.btnActualizarMenu);
         this.navegacionMenu();
     }
     private void navegacionMenu(){
@@ -37,6 +38,12 @@ public class MainActivity extends AppCompatActivity {
                 abrirListadoBebidas();
             }
         });
+        buttonActualizar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                abrirActualizar();
+            }
+        });
     }
     private void abrirInsertar(){
         Intent intent = new Intent(this,MAInsertarSQLite.class);
@@ -48,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
     }
     private void abrirListadoBebidas(){
         Intent intent = new Intent(this,MAListarMostrarSQLite.class);
+        startActivity(intent);
+    }
+    private void abrirActualizar(){
+        Intent intent = new Intent(this,MAActualizarSQLite.class);
         startActivity(intent);
     }
 }

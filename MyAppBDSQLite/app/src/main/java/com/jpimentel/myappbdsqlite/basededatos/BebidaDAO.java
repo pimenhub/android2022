@@ -102,4 +102,30 @@ public class BebidaDAO implements ConsultasDAO {
         }
         return listadoBebidas;
     }
+
+    @Override
+    public boolean actualizarBebida(BebidaVO bvo, Context context) {
+        boolean resultado = false;
+        ConectorSQLite conectorSQLite = new ConectorSQLite(context,ConstantesSQL.BD_BEBIDA,null,ConstantesSQL.VERSION);
+        SQLiteDatabase database = conectorSQLite.getWritableDatabase();
+        try {
+            String consulta = "UPDATE "+ConstantesSQL.TBL_BEBIDA+" SET "+
+                    ConstantesSQL.CAMPO_NOMBRE+"= '"+bvo.getNombreBebida()+"', "+
+                    ConstantesSQL.CAMPO_SABOR+"= '"+bvo.getSaborBebida()+"', "+
+                    ConstantesSQL.CAMPO_PRESENTACION+"= "+bvo.getPresentacionBebida()+","+
+                    ConstantesSQL.CAMPO_TIPO+"= '"+bvo.getTipoBebida()+"', "+
+                    ConstantesSQL.CAMPO_PRECIO+"= "+bvo.getPrecioBebida()+
+                    " WHERE "+ConstantesSQL.CAMPO_CODIGO+"= "+bvo.getCodBebida();
+
+            database.execSQL(consulta);
+            database.close();
+            resultado = true;
+
+        }
+        catch (Exception e){
+            e.getMessage();
+            database.close();
+        }
+        return resultado;
+    }
 }

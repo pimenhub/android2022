@@ -1,7 +1,11 @@
 package com.jpimentel.myappbdsqlite;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -21,9 +25,17 @@ public class MAListarMostrarSQLite extends AppCompatActivity {
         listView = findViewById(R.id.lvListadoBebidas);
 
         ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1,llenarLista());
+        this.clickItemLista();
         listView.setAdapter(arrayAdapter);
 
-
+    }
+    private void clickItemLista(){
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                trasladarDatos(i,MADetalle.class);
+            }
+        });
     }
 
     private ArrayList<String> llenarLista(){
@@ -34,5 +46,16 @@ public class MAListarMostrarSQLite extends AppCompatActivity {
             }
         }
         return lista;
+    }
+
+    private void trasladarDatos(int position, Class actividad){
+        Intent intent = new Intent(this, actividad);
+        intent.putExtra("codigo", bdao.listarBebida(bvo,getApplicationContext()).get(position).getCodBebida().toString());
+        intent.putExtra("nombre", bdao.listarBebida(bvo,getApplicationContext()).get(position).getNombreBebida());
+        intent.putExtra("sabor", bdao.listarBebida(bvo,getApplicationContext()).get(position).getSaborBebida());
+        intent.putExtra("presentacion", bdao.listarBebida(bvo,getApplicationContext()).get(position).getPresentacionBebida().toString());
+        intent.putExtra("tipo", bdao.listarBebida(bvo,getApplicationContext()).get(position).getTipoBebida());
+        intent.putExtra("precio", bdao.listarBebida(bvo,getApplicationContext()).get(position).getPrecioBebida().toString());
+        startActivity(intent);
     }
 }
