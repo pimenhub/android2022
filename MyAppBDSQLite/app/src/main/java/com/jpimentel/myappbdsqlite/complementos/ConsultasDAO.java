@@ -13,5 +13,6 @@ public interface ConsultasDAO {
     public Cursor buscarIdBebida(BebidaVO bvo, Context context);
     public ArrayList<BebidaVO> listarBebida(BebidaVO bvo, Context context);
     public boolean actualizarBebida(BebidaVO bvo, Context context);
+    public boolean eliminarBebida(BebidaVO bvo, Context context);
 
 }

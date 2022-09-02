@@ -128,4 +128,25 @@ public class BebidaDAO implements ConsultasDAO {
         }
         return resultado;
     }
+
+    @Override
+    public boolean eliminarBebida(BebidaVO bvo, Context context) {
+        boolean resultado = false;
+        ConectorSQLite conectorSQLite = new ConectorSQLite(context,ConstantesSQL.BD_BEBIDA,null,ConstantesSQL.VERSION);
+        SQLiteDatabase database = conectorSQLite.getWritableDatabase();
+        try {
+            String consulta = "DELETE FROM "+ConstantesSQL.TBL_BEBIDA
+                            +" WHERE "+ConstantesSQL.CAMPO_CODIGO+"= "+bvo.getCodBebida();
+            database.execSQL(consulta);
+            database.close();
+            resultado = true;
+        }
+        catch (Exception e){
+            e.getMessage();
+            database.close();
+        }
+
+
+        return resultado;
+    }
 }

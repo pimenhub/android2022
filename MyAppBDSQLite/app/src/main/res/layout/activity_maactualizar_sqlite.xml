@@ -1,9 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MAActualizarSQLite">
+    tools:context=".MAActualizarSQLite"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actualizar Bebidas"
+                android:layout_gravity="center"
+                android:layout_margin="15sp"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                />
 
-</android.support.constraint.ConstraintLayout>
+            <ListView
+                android:id="@+id/lvBebidasActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:layout_margin="10sp"
+                android:nestedScrollingEnabled="true"
+                />
+
+            <EditText
+                android:id="@+id/edtNombreBebidaActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:hint="Nombre a Actualizar"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/edtSaborBebidaActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:hint="Sabor a Actualizar"
+                android:inputType="text"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edtPresentacionBebidaActualizar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp"
+                    android:hint="Presentacion a Actualizar"
+                    android:inputType="number"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="mL"
+                    android:textSize="20sp"
+                    android:layout_margin="15sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtTipoBebidaActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:hint="Tipo a Actualizar"
+                android:inputType="text"
+                />
+            <EditText
+                android:id="@+id/edtPrecioBebidaActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15sp"
+                android:hint="Precio a Actualizar"
+                android:inputType="numberDecimal"
+                />
+            <Button
+                android:id="@+id/btnActualizarRegistro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actualizar Bebida"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="15sp"
+                android:backgroundTint="#FF0000"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

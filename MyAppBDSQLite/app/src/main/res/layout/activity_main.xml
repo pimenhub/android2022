@@ -71,5 +71,15 @@
         android:layout_margin="15sp"
         android:backgroundTint="#FF0000"
         />
+    <Button
+        android:id="@+id/btnEliminarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Bebida"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="15sp"
+        android:backgroundTint="#FF0000"
+        />
 
 </LinearLayout>
