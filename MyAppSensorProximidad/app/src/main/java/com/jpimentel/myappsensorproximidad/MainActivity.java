@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onSensorChanged(SensorEvent sensorEvent) {
                     if(sensorEvent.values[0] < sensor.getMaximumRange()){
                         getWindow().getDecorView().setBackgroundColor(Color.RED);
+                        getWindow().getDecorView().setBackground(getDrawable(R.drawable.ic_launcher_background));
                     }else
                         getWindow().getDecorView().setBackgroundColor(Color.GREEN);
                 }

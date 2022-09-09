@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MAInsertarSW"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15sp"
+        android:gravity="center"
+        android:text="Registrar Cliente"
+        android:textColor="#FFA000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:hint="Ingresar Nombre del Cliente"
+        android:textColorHint="#C3C3C3"
+        app:helperTextEnabled="false"
+        app:endIconMode="clear_text"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="16sp"
+        app:boxCornerRadiusBottomEnd="16sp"
+        app:boxCornerRadiusTopStart="16sp"
+        app:boxCornerRadiusBottomStart="16sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tfmNombreInsertar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:hint="Ingresar Apellido del Cliente"
+        android:textColorHint="#C3C3C3"
+        app:helperTextEnabled="false"
+        app:endIconMode="clear_text"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="16sp"
+        app:boxCornerRadiusBottomEnd="16sp"
+        app:boxCornerRadiusTopStart="16sp"
+        app:boxCornerRadiusBottomStart="16sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tfmApellidoInsertar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:hint="Ingresar Correo del Cliente"
+        android:textColorHint="#C3C3C3"
+        app:helperTextEnabled="false"
+        app:endIconMode="clear_text"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="16sp"
+        app:boxCornerRadiusBottomEnd="16sp"
+        app:boxCornerRadiusTopStart="16sp"
+        app:boxCornerRadiusBottomStart="16sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tfmCorreoInsertar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:hint="Ingresar Fecha de Nacimiento del Cliente"
+        android:textColorHint="#C3C3C3"
+        app:helperTextEnabled="false"
+        app:endIconMode="clear_text"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="16sp"
+        app:boxCornerRadiusBottomEnd="16sp"
+        app:boxCornerRadiusTopStart="16sp"
+        app:boxCornerRadiusBottomStart="16sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tfmFechaNaInsertar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:hint="Ingresar Limite de Credito del Cliente"
+        android:textColorHint="#C3C3C3"
+        app:helperTextEnabled="false"
+        app:endIconMode="clear_text"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopEnd="16sp"
+        app:boxCornerRadiusBottomEnd="16sp"
+        app:boxCornerRadiusTopStart="16sp"
+        app:boxCornerRadiusBottomStart="16sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tfmLimiteCreInsertar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnmInsertarCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="REGISTRAR CLIENTE"
+        app:icon="@drawable/ic_add"
+        />
+
+</LinearLayout>
