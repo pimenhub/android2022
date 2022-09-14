@@ -19,6 +19,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.ArrayList;
+
 
 public class ClienteDAO implements ConsultasDAO, Response.Listener<JSONObject>,Response.ErrorListener {
     private Integer banderaDeUso = 0;
@@ -75,8 +77,9 @@ public class ClienteDAO implements ConsultasDAO, Response.Listener<JSONObject>,R
             cvo.setCorreCliente(jsonObject.optString("correo_cliente"));
             cvo.setFechaNacimientoCliente(jsonObject.optString("fecha_nacimiento_cliente"));
             cvo.setLimiteCreditoCliente(jsonObject.optDouble("limite_credito_cliente"));
-            String identificadorDeError = jsonObject.optString("error");
 
+            //Validacion del Error en la obtencion de datos
+            String identificadorDeError = jsonObject.optString("error");
             if(identificadorDeError.isEmpty())
                 resultado = true;
             else
@@ -88,6 +91,50 @@ public class ClienteDAO implements ConsultasDAO, Response.Listener<JSONObject>,R
             e.printStackTrace();
         }
         return resultado;
+    }
+
+    @Override
+    public boolean listarMostrarSW(ClienteVO cvo, Context context,
+                                   Response.Listener listener, Response.ErrorListener errorListener) {
+        boolean resultado = false;
+        try {
+            String url = Constantes.IPSERVER+"apiRestPhpSw2022/listarMostrar.php";
+            RequestQueue requestQueue = Volley.newRequestQueue(context);
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,
+                    listener, errorListener);
+            requestQueue.add(jsonObjectRequest);
+            resultado = true;
+        }
+        catch (Exception e){
+            Toast.makeText(context, "Error en la conexion "+e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+        return resultado;
+    }
+
+    @Override
+    public ArrayList<ClienteVO> respuestaListarMostrar(JSONObject respuesta) {
+        ArrayList<ClienteVO> arrayListVO = new ArrayList<>();
+        JSONArray jsonArray = respuesta.optJSONArray("cliente");
+        try {
+            for (int i = 0; i < jsonArray.length(); i++) {
+                ClienteVO cvo = new ClienteVO();
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                cvo.setCodCliente(jsonObject.optInt("cod_cliente"));
+                cvo.setNombreCliente(jsonObject.optString("nombre_cliente"));
+                cvo.setApellidoCliente(jsonObject.optString("apellido_cliente"));
+                cvo.setCorreCliente(jsonObject.optString("correo_cliente"));
+                cvo.setFechaNacimientoCliente(jsonObject.optString("fecha_nacimiento_cliente"));
+                cvo.setLimiteCreditoCliente(jsonObject.optDouble("limite_credito_cliente"));
+                arrayListVO.add(cvo);
+            }
+
+        }
+        catch (JSONException e){
+            System.err.println(e.getMessage());
+            e.printStackTrace();
+        }
+        return arrayListVO;
+
     }
 
     @Override

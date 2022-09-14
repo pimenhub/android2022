@@ -54,5 +54,15 @@
         style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
         />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnmListarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="LISTADO DE CLIENTES"
+        app:icon="@drawable/ic_list"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        />
+
 
 </LinearLayout>
