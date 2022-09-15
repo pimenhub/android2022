@@ -138,6 +138,45 @@ public class ClienteDAO implements ConsultasDAO, Response.Listener<JSONObject>,R
     }
 
     @Override
+    public boolean actualizarSW(ClienteVO cvo, Context context) {
+        boolean resultado = false;
+        banderaDeUso = Constantes.ACTUALIZAR;
+        try {
+            String url = Constantes.IPSERVER+"apiRestPhpSw2022/actualizar.php?nombreCliente="+cvo.getNombreCliente()
+                    +"&apellidoCliente="+cvo.getApellidoCliente()+"&correoCliente="+cvo.getCorreCliente()
+                    +"&fechaNacimientoCliente="+cvo.getFechaNacimientoCliente()+"&limiteCreditoCliente="+cvo.getLimiteCreditoCliente()
+                    +"&codigoCliente="+cvo.getCodCliente();
+            RequestQueue requestQueue = Volley.newRequestQueue(context);
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,
+                    null,this);
+            requestQueue.add(jsonObjectRequest);
+            resultado = true;
+        }
+        catch (Exception e){
+            Toast.makeText(context, "Error en la conexion "+e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+        return resultado;
+    }
+
+    @Override
+    public boolean eliminarSW(ClienteVO cvo, Context context) {
+        boolean resultado = false;
+        banderaDeUso = Constantes.ELIMINAR;
+        try {
+            String url = Constantes.IPSERVER+"apiRestPhpSw2022/eliminar.php?codigoCliente="+cvo.getCodCliente();
+            RequestQueue requestQueue = Volley.newRequestQueue(context);
+            JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET,url,null,
+                    null,this);
+            requestQueue.add(jsonObjectRequest);
+            resultado = true;
+        }
+        catch (Exception e){
+            Toast.makeText(context, "Error en la conexion "+e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+        return resultado;
+    }
+
+    @Override
     public void onResponse(JSONObject response) {
         switch (banderaDeUso){
 
@@ -148,6 +187,12 @@ public class ClienteDAO implements ConsultasDAO, Response.Listener<JSONObject>,R
     public void onErrorResponse(VolleyError error) {
         switch (banderaDeUso){
             case 1://INSERTAR
+                System.err.println(error);
+                break;
+            case 2://ACTUALIZAR
+                System.err.println(error);
+                break;
+            case 3:
                 System.err.println(error);
                 break;
         }

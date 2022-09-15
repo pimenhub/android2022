@@ -15,5 +15,7 @@ public interface ConsultasDAO {
     public boolean respuestaBusquedaID(ClienteVO cvo, JSONObject respuesta);
     public boolean listarMostrarSW(ClienteVO cvo, Context context, Response.Listener listener, Response.ErrorListener errorListener);
     public ArrayList<ClienteVO> respuestaListarMostrar(JSONObject respuesta);
+    public boolean actualizarSW(ClienteVO cvo, Context context);
+    public boolean eliminarSW(ClienteVO cvo, Context context);
 }
 

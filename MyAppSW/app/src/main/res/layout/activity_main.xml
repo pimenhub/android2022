@@ -19,8 +19,8 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:layout_width="200sp"
-        android:layout_height="200sp"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
         android:layout_gravity="center"
         android:layout_margin="10sp"
         android:src="@drawable/ic_cliente" />
@@ -61,6 +61,24 @@
         android:layout_margin="15sp"
         android:text="LISTADO DE CLIENTES"
         app:icon="@drawable/ic_list"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnmActualizarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="ACTUALIZAR CLIENTE"
+        app:icon="@drawable/ic_update"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnmEliminarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="ELIMINAR CLIENTE"
+        app:icon="@drawable/ic_delete"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
         />
 

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MAActualizarSW"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="15sp"
+        android:gravity="center"
+        android:text="Actualizar Cliente"
+        android:textColor="#FFA000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        app:cardCornerRadius="15sp"
+        android:layout_margin="15sp"
+        android:elevation="15sp"
+        app:cardElevation="15sp"
+        app:contentPadding="10sp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/lvListarActualizarClientes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/edtNombreCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Cliente"
+        android:layout_margin="10sp"
+        android:inputType="text"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/edtApellidoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido Cliente"
+        android:layout_margin="10sp"
+        android:inputType="text"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/edtCorreoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Correo Cliente"
+        android:layout_margin="10sp"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/edtFechaNacimientoCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de Nacimiento"
+        android:layout_margin="10sp"
+        android:inputType="date"
+        android:textSize="20sp"
+        />
+    <EditText
+        android:id="@+id/edtLimiteCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Limite de Credito"
+        android:layout_margin="10sp"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/btnActualizarCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15sp"
+        android:text="Actualizar Cliente"
+        android:backgroundTint="#FFA000"
+        />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
